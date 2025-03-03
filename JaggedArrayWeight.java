@@ -30,10 +30,6 @@ public class JaggedArrayWeight {
 	        }
 	    }
 	 public static int findMinWeight(int[][] weights, int personIndex) {
-	        if (personIndex < 0 || personIndex >= weights.length || weights[personIndex].length == 0) {
-	            throw new IllegalArgumentException("Invalid person index or no weights available.");
-	        }
-
 	        int minWeight = weights[personIndex][0];
 	        for (int weight : weights[personIndex]) {
 	            if (weight < minWeight) {
